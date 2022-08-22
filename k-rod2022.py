@@ -113,16 +113,16 @@ def main(cap,cfg,weight):
             if end_y >= a:
                 print("kırmızı alan uyarısı! {}".format(label))
                 with open("waiting_for_talking.txt", "a") as file:
-                    file.write("Kırmızı: {}".format(label))
+                    file.write("Kırmızı: {}\n".format(label))
         
                 if end_x >= 278:
                     print("sol")
                     with open("waiting_for_talking.txt", "a") as file:
-                        file.write("R- {}".format(label))
+                        file.write("R- {}\n".format(label))
                 elif 1 < end_x < 278:
                     print("sağ")
                     with open("waiting_for_talking.txt", "a") as file:
-                        file.write("L- {}".format(label))
+                        file.write("L- {}\n".format(label))
             else:
                 print("-->")
     
